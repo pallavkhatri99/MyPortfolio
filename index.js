@@ -1,9 +1,11 @@
+var showContaint = 1
 function openCloseMenu(e){
     if(e == "open"){
         $('.nav span:contains("menu")').css('display','none')
         $('.nav span:contains("close")').css('display','block')
         $('.nav-item').removeClass('hide');
         $('#home').addClass('hide');
+        $('#about').addClass('hide')
     }
     else if(e == 'close'){
         $('.nav span:contains("menu")').css('display','block')
