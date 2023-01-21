@@ -16,17 +16,18 @@
             </div>
             <div class="nav-item hide">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Help</li>
+                    <li onclick="show(1)">Home</li>
+                    <li onclick="show(2)">About</li>
+                    <li onclick="show(3)">Contact</li>
+                    <li onclick="show(4)">Help</li>
                 </ul>
             </div>
     </div>
     </header>
     <div class="main">
         <section>
-            <div id="home" class="hide">
+            <!---------------Home Section-------------------->
+            <div id="home" class="">
               <div class="container-home">
                 <div class="row align-items-center">
                     <div class="intro-box text-align-center">
@@ -34,7 +35,7 @@
                             <br> <span>Pallav Khatri</span>
                         </p>
                         <h5>Full Stack Developer</h5>
-                        <div class="intro-about">
+                        <div class="intro-about" onclick="showPages(2)">
                             <button class="slide">&nbsp;</button>
                         </div>
                     </div>
@@ -46,12 +47,14 @@
                 </div>
              </div>
             </div>
+            <!----------------------------------------------------------->
+            <!-------------------------About Section--------------------->
             <div id="about" class="hide">
                 <div class="container-about">
                     <h1>About</h1>
                     <div class="row">
                         <div class="img-box">
-                            <img src="./myclick.png" alt="">
+                            <img src="./myclick.png" alt="" style="position: fixed;">
                         </div>
                         <div class="about-box">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus officia nam animi nemo? Sit perspiciatis, explicabo veritatis possimus beatae reiciendis cum, aliquid quam optio a laboriosam est. Temporibus, ipsam id?</p>
@@ -67,56 +70,85 @@
                                 <div class="skills-items">C#</div>
                             </div>
                             <div class="btn-tabs">
-                                <div><button>Education</button></div>
                                 <div><button>Experience</button></div>
+                                <div><button>Education</button></div>
                             </div>
+                            <!--Education-->
                             <div id="education" class="hide">
                                 <div class="edu-part">
                                     <div class="timeline">
                                         <div class="timeline-item">
-                                            <span class="date">2020-2020</span>
-                                            <h4>Bachelor in Technology<span>MIT</span></h4>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis perferendis nulla eius quaerat a pariatur provident, facilis laudantium quasi natus, iste non illo assumenda in accusantium saepe facere sapiente possimus!</p>
+                                            <span class="date">2017-2021</span>
+                                            <h4>Bachelor of Technology in Electrical Engineering</h4>
+                                            <span>MODI INSTITUTE OF TECHNOLOGY | KOTA</span>
+                                            <p>Bachelor of Technology in Electrical Engineering<br> 
+                                                Aggregate Performance : 73%</p>
                                         </div>
                                         <div class="timeline-item">
-                                            <span class="date">2020-2020</span>
-                                            <h4>Bachelor in Technology<span>MIT</span></h4>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis perferendis nulla eius quaerat a pariatur provident, facilis laudantium quasi natus, iste non illo assumenda in accusantium saepe facere sapiente possimus!</p>
+                                            <span class="date">2016-2017</span>
+                                            <h4>HSC Form RBSE</h4>
+                                            <span>ALPHA ENGLISH SCHOOL | RAWATBHATA </span>
+                                            <p>Rajasthan Board of Secondary Education <br>
+                                                Aggregate Performance : 76.60%</p>
                                         </div>
                                         <div class="timeline-item">
-                                            <span class="date">2020-2020</span>
-                                            <h4>Bachelor in Technology<span>MIT</span></h4>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis perferendis nulla eius quaerat a pariatur provident, facilis laudantium quasi natus, iste non illo assumenda in accusantium saepe facere sapiente possimus!</p>
+                                            <span class="date">2014-2015</span>
+                                            <h4>SSC From RBSE</h4>
+                                            <span>S G T B S SCHOOL | RAWATBHATA</span>
+                                            <p>Rajasthan Board of Secondary Education <br>
+                                                Aggregate Performance : 75.33%
+                                                </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-------------->
+                            <!--Experience-->
                             <div id="experience">
                                 <div class="edu-part">
                                     <div class="timeline">
                                         <div class="timeline-item">
-                                            <span class="date">2020-2020</span>
-                                            <h4>Bachelor in Technology<span>MIT</span></h4>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis perferendis nulla eius quaerat a pariatur provident, facilis laudantium quasi natus, iste non illo assumenda in accusantium saepe facere sapiente possimus!</p>
+                                            <span class="date">06/2022 – Present </span>
+                                            <h4>ASP.NET Developer ,<span>ReliableSoft </span></h4>
+                                            <p><b>Currently working as ASP.Net Developer</b>
+                                                <br>
+                                                <ul style="padding-left: 20px;">
+                                                    <li>Good Experience in design and development of
+                                                        web application using C# ,JavaScript ,Ajax
+                                                       ,ASP.Net ,ADO.Net and Visual Studio.</li>
+                                                    <li> Good Knowledge in MSSQL Database.</li>
+                                                </ul>
+                                            </p>
                                         </div>
                                         <div class="timeline-item">
-                                            <span class="date">2020-2020</span>
-                                            <h4>Bachelor in Technology<span>MIT</span></h4>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis perferendis nulla eius quaerat a pariatur provident, facilis laudantium quasi natus, iste non illo assumenda in accusantium saepe facere sapiente possimus!</p>
+                                            <span class="date">03/2021 – 06/2021</span>
+                                            <h4>MilestoneOS<span>, Noida</span></h4>
+                                            <p><b> Trainee Course For React.js </b><br>
+                                                <ul style="padding-left: 20px;">
+                                                    <li>Creating some Simple Webpages by Using HTML and CSS.</li>
+                                                    <li>Creating some JavaScript Functions.</li>
+                                                    <li>Develop UI in React.js by using component, Hooks, JSX.</li>
+                                                </ul>
+                                            </p>
                                         </div>
-                                        <div class="timeline-item">
-                                            <span class="date">2020-2020</span>
-                                            <h4>Bachelor in Technology<span>MIT</span></h4>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis perferendis nulla eius quaerat a pariatur provident, facilis laudantium quasi natus, iste non illo assumenda in accusantium saepe facere sapiente possimus!</p>
+                                        <div class="timeline-item .hide">
+                                            <span class="date">Currently</span>
+                                            <h4>Intellipaat | Online Professional Training Courses <span></span></h4>
+                                            <p>Full Stack Web Developer – MEAN Stack Course Pursuing from Intellipaat<br>
+                                                Intellipaat is a global online professional training provider.                                                
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-------------->
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="contact">
+            <!----------------------------------------------------------->
+            <!------------------Contact Section------------------>
+            <div id="contact" class="hide">
                 <div class="contact-box">
                     <h1>Contact me</h1>
                     <div class="row">
@@ -131,20 +163,39 @@
                             <div class="follow-details">
                                 <div class="detail-item">
                                     <label for="email">Email</label>
-                                    <h5>pallavkhatri99@gmail.com</h5>
+                                    <h5>pallavkhatri99@gmail.com
+                                        <span onclick="copyEmail(this)">
+                                            <i class="fa fa-clone" aria-hidden="true" style="font-size:10px;cursor: pointer;" ></i>
+                                            <i class="fa fa-check hide" aria-hidden="true" style="font-size:10px;cursor: pointer;"></i>
+                                        </span>
+                                    </h5>
                                 </div>
                                 <div class="detail-item">
                                     <label for="email">Phone No.</label>
-                                    <h5>8740092045</h5>
+                                    <h5>8740092045 
+                                        <span onclick="copyNumber(this)">
+                                            <i class="fa fa-clone" aria-hidden="true" style="font-size:10px;cursor: pointer;"></i>
+                                            <i class="fa fa-check hide" aria-hidden="true" style="font-size:10px;cursor: pointer;"></i>
+                                        </span>
+                                    </h5>
                                 </div>
                                 <div class="detail-item">
                                     <label for="">Follow Me</label>
+                                    <ul>
+                                        <li data-title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                                        <li data-title="Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+                                        <li data-title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                                        <li data-title="Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+                                        <li data-title="Github"><i class="fa fa-github" aria-hidden="true"></i></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--------------------------------------------------->
+
         </section>
     </div>
 </body>
